@@ -67,6 +67,16 @@
               "nullable": true,
               "minLength": 1,
               "maxLength": 100
+            },
+            "examples": {
+              "java": {
+                "value": "Java",
+                "description": "Search todolist by name Java"
+              },
+              "javascript": {
+                "value": "Javascript",
+                "description": "Search todolist by name Javascript"
+              }
             }
           }
         ],
@@ -112,6 +122,32 @@
                     }
                   }
                 }
+              },
+              "examples": {
+                "java": {
+                  "value": {
+                    "title": "Java",
+                    "date": "2021-01-01",
+                    "description": "Learn Java",
+                    "tags": [
+                      "java",
+                      "learn"
+                    ]
+                  },
+                  "description": "Create new todolist Java"
+                },
+                "javascript": {
+                  "value": {
+                    "title": "Javascript",
+                    "date": "2021-01-01",
+                    "description": "Learn Javascript",
+                    "tags": [
+                      "javascript",
+                      "learn"
+                    ]
+                  },
+                  "description": "Create new todolist Javascript"
+                }
               }
             }
           }
@@ -136,6 +172,16 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 100
+            },
+            "examples": {
+              "java": {
+                "value": "1",
+                "description": "Todolist Id for updated Java"
+              },
+              "javascript": {
+                "value": "2",
+                "description": "Todolist Id for updated Javascript"
+              }
             }
           }
         ],
@@ -172,6 +218,32 @@
                       "maxLength": 5
                     }
                   }
+                }
+              },
+              "examples": {
+                "java": {
+                  "value": {
+                    "title": "Java",
+                    "date": "2021-01-01",
+                    "description": "Learn Java",
+                    "tags": [
+                      "java",
+                      "learn"
+                    ]
+                  },
+                  "description": "Create new todolist Java"
+                },
+                "javascript": {
+                  "value": {
+                    "title": "Javascript",
+                    "date": "2021-01-01",
+                    "description": "Learn Javascript",
+                    "tags": [
+                      "javascript",
+                      "learn"
+                    ]
+                  },
+                  "description": "Create new todolist Javascript"
                 }
               }
             }
