@@ -18,11 +18,7 @@
         "environment": {
           "default": "dev",
           "description": "Server Environment",
-          "enum": [
-            "dev",
-            "qa",
-            "prod"
-          ]
+          "enum": ["dev", "qa", "prod"]
         }
       }
     }
@@ -34,15 +30,13 @@
   "tags": [
     {
       "name": "Todolist",
-      "description": "Todolist RESTful APIa"
+      "description": "Todolist RESTful API"
     }
   ],
   "paths": {
     "/todolist": {
       "get": {
-        "tags": [
-          "Todolist"
-        ],
+        "tags": ["Todolist"],
         "summary": "Get all todolist",
         "description": "Get all active todolist by default",
         "parameters": [
@@ -65,24 +59,18 @@
             }
           }
         ],
-        "responses": {
-        }
+        "responses": {}
       },
       "post": {
-        "tags": [
-          "Todolist"
-        ],
+        "tags": ["Todolist"],
         "summary": "Create new todolist",
         "description": "Create new todolist to database",
-        "responses": {
-        }
+        "responses": {}
       }
     },
     "/todolist/{todolistId}": {
       "put": {
-        "tags": [
-          "Todolist"
-        ],
+        "tags": ["Todolist"],
         "summary": "Update todolist",
         "description": "Update existing todolist in database",
         "parameters": [
@@ -96,13 +84,10 @@
             }
           }
         ],
-        "responses": {
-        }
+        "responses": {}
       },
       "delete": {
-        "tags": [
-          "Todolist"
-        ],
+        "tags": ["Todolist"],
         "summary": "Delete todolist",
         "description": "Delete existing todolist in database",
         "parameters": [
@@ -116,8 +101,7 @@
             }
           }
         ],
-        "responses": {
-        }
+        "responses": {}
       }
     }
   }
