@@ -1,0 +1,124 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Todolist RESTful API",
+    "version": "1.0.0",
+    "description": "OpenAPI for Todolist RESTful API",
+    "contact": {
+      "name": "Thomas Alberto",
+      "email": "tomasalberto527@gmail.com",
+      "url": "https://thomasalberto.vercel.app/"
+    }
+  },
+  "servers": [
+    {
+      "description": "Todolist RESTful API Server",
+      "url": "http://{environment}.todolist.com/api/v1.0.0",
+      "variables": {
+        "environment": {
+          "default": "dev",
+          "description": "Server Environment",
+          "enum": [
+            "dev",
+            "qa",
+            "prod"
+          ]
+        }
+      }
+    }
+  ],
+  "externalDocs": {
+    "description": "Repository Todolist RESTful API",
+    "url": "-"
+  },
+  "tags": [
+    {
+      "name": "Todolist",
+      "description": "Todolist RESTful API"
+    }
+  ],
+  "paths": {
+    "/todolist": {
+      "get": {
+        "tags": [
+          "Todolist"
+        ],
+        "summary": "Get all todolist",
+        "description": "Get all active todolist by default",
+        "parameters": [
+          {
+            "name": "include_done",
+            "in": "query",
+            "required": false,
+            "description": "Is include done todolist",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "required": false,
+            "description": "Search todolist by name",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+        }
+      },
+      "post": {
+        "tags": [
+          "Todolist"
+        ],
+        "summary": "Create new todolist",
+        "description": "Create new todolist to database",
+        "responses": {
+        }
+      }
+    },
+    "/todolist/{todolistId}": {
+      "put": {
+        "tags": [
+          "Todolist"
+        ],
+        "summary": "Update todolist",
+        "description": "Update existing todolist in database",
+        "parameters": [
+          {
+            "name": "todolistId",
+            "in": "path",
+            "required": true,
+            "description": "Todolist Id for updated",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+        }
+      },
+      "delete": {
+        "tags": [
+          "Todolist"
+        ],
+        "summary": "Delete todolist",
+        "description": "Delete existing todolist in database",
+        "parameters": [
+          {
+            "name": "todolistId",
+            "in": "path",
+            "required": true,
+            "description": "Todolist Id for deleted",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+        }
+      }
+    }
+  }
+}
