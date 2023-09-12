@@ -34,6 +34,11 @@
   "paths": {
     "/todolist": {
       "get": {
+        "security": [
+          {
+            "TodolistAuth": []
+          }
+        ],
         "tags": [
           "Todolist"
         ],
@@ -125,6 +130,11 @@
         }
       },
       "post": {
+        "security": [
+          {
+            "TodolistAuth": []
+          }
+        ],
         "tags": [
           "Todolist"
         ],
@@ -227,6 +237,11 @@
     },
     "/todolist/{todolistId}": {
       "put": {
+        "security": [
+          {
+            "TodolistAuth": []
+          }
+        ],
         "tags": [
           "Todolist"
         ],
@@ -350,6 +365,11 @@
         }
       },
       "delete": {
+        "security": [
+          {
+            "TodolistAuth": []
+          }
+        ],
         "tags": [
           "Todolist"
         ],
@@ -416,6 +436,16 @@
             }
           }
         }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "TodolistAuth": {
+        "description": "Authentication Todolist RESTful API",
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization"
       }
     }
   }
