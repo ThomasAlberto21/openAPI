@@ -164,32 +164,6 @@
                     }
                   }
                 }
-              },
-              "examples": {
-                "java": {
-                  "value": {
-                    "title": "Java",
-                    "date": "2021-01-01",
-                    "description": "Learn Java",
-                    "tags": [
-                      "java",
-                      "learn"
-                    ]
-                  },
-                  "description": "Create new todolist Java"
-                },
-                "javascript": {
-                  "value": {
-                    "title": "Javascript",
-                    "date": "2021-01-01",
-                    "description": "Learn Javascript",
-                    "tags": [
-                      "javascript",
-                      "learn"
-                    ]
-                  },
-                  "description": "Create new todolist Javascript"
-                }
               }
             }
           }
@@ -224,7 +198,11 @@
                       "id": "1",
                       "title": "Java",
                       "date": "2021-01-01",
-                      "description": "Learn Java"
+                      "description": "Learn Java",
+                      "tags": [
+                        "java",
+                        "learn"
+                      ]
                     }
                   },
                   "javascript": {
@@ -233,7 +211,11 @@
                       "id": "2",
                       "title": "Javascript",
                       "date": "2021-01-01",
-                      "description": "Learn Javascript"
+                      "description": "Learn Javascript",
+                      "tags": [
+                        "javascript",
+                        "learn"
+                      ]
                     }
                   }
                 }
@@ -307,32 +289,6 @@
                     }
                   }
                 }
-              },
-              "examples": {
-                "java": {
-                  "value": {
-                    "title": "Java",
-                    "date": "2021-01-01",
-                    "description": "Learn Java",
-                    "tags": [
-                      "java",
-                      "learn"
-                    ]
-                  },
-                  "description": "Create new todolist Java"
-                },
-                "javascript": {
-                  "value": {
-                    "title": "Javascript",
-                    "date": "2021-01-01",
-                    "description": "Learn Javascript",
-                    "tags": [
-                      "javascript",
-                      "learn"
-                    ]
-                  },
-                  "description": "Create new todolist Javascript"
-                }
               }
             }
           }
@@ -367,7 +323,11 @@
                       "id": "1",
                       "title": "Java",
                       "date": "2021-01-01",
-                      "description": "Learn Java"
+                      "description": "Learn Java",
+                      "tags": [
+                        "java",
+                        "learn"
+                      ]
                     }
                   },
                   "javascript": {
@@ -376,7 +336,11 @@
                       "id": "2",
                       "title": "Javascript",
                       "date": "2021-01-01",
-                      "description": "Learn Javascript"
+                      "description": "Learn Javascript",
+                      "tags": [
+                        "javascript",
+                        "learn"
+                      ]
                     }
                   }
                 }
