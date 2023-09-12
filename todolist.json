@@ -31,12 +31,6 @@
     "description": "Repository Todolist RESTful API",
     "url": "-"
   },
-  "tags": [
-    {
-      "name": "Todolist",
-      "description": "Todolist RESTful API"
-    }
-  ],
   "paths": {
     "/todolist": {
       "get": {
