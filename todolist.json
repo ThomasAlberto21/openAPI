@@ -80,7 +80,55 @@
             }
           }
         ],
-        "responses": {}
+        "responses": {
+          "200": {
+            "description": "Success get all todolist",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "date": {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      "description": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "success": {
+                    "description": "Example Success get all todolist",
+                    "value": [
+                      {
+                        "id": "1",
+                        "title": "Java",
+                        "date": "2021-01-01",
+                        "description": "Learn Java"
+                      },
+                      {
+                        "id": "2",
+                        "title": "Javascript",
+                        "date": "2021-01-01",
+                        "description": "Learn Javascript"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
       },
       "post": {
         "tags": [
@@ -152,7 +200,53 @@
             }
           }
         },
-        "responses": {}
+        "responses": {
+          "200": {
+            "description": "Success create new todolist",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "date": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "examples": {
+                  "java": {
+                    "description": "Example Success create new todolist Java",
+                    "value": {
+                      "id": "1",
+                      "title": "Java",
+                      "date": "2021-01-01",
+                      "description": "Learn Java"
+                    }
+                  },
+                  "javascript": {
+                    "description": "Example Success create new todolist Javascript",
+                    "value": {
+                      "id": "2",
+                      "title": "Javascript",
+                      "date": "2021-01-01",
+                      "description": "Learn Javascript"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/todolist/{todolistId}": {
@@ -249,7 +343,53 @@
             }
           }
         },
-        "responses": {}
+        "responses": {
+          "200": {
+            "description": "Success update todolist",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "date": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "examples": {
+                  "java": {
+                    "description": "Example Success update todolist Java",
+                    "value": {
+                      "id": "1",
+                      "title": "Java",
+                      "date": "2021-01-01",
+                      "description": "Learn Java"
+                    }
+                  },
+                  "javascript": {
+                    "description": "Example Success update todolist Javascript",
+                    "value": {
+                      "id": "2",
+                      "title": "Javascript",
+                      "date": "2021-01-01",
+                      "description": "Learn Javascript"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       },
       "delete": {
         "tags": [
@@ -270,7 +410,54 @@
             }
           }
         ],
-        "responses": {}
+        "responses": {
+          "200": {
+            "description": "Success delete todolist",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "examples": {
+                  "success": {
+                    "description": "Success delete todolist",
+                    "value": {
+                      "success": true
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Failed delete not found todolist",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "examples": {
+                  "failed": {
+                    "description": "Failed delete todolist",
+                    "value": {
+                      "success": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
